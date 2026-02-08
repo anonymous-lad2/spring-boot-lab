@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encryption Terminal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🔐 Encryption Terminal</h1>
+
+<button class="info-btn" onclick="toggleInfo()">ℹ️ About Ciphers</button>
+
+<div id="cipher-info" style="display:none;"></div>
+
+<textarea id="message" placeholder="Enter your message"></textarea>
+
+<h3>Cipher Chain</h3>
+<div id="steps"></div>
+
+<button onclick="addStep()">➕ Add Cipher Step</button>
+
+<br><br>
+
+<button onclick="encrypt()">Encrypt</button>
+<button onclick="decrypt()">Decrypt</button>
+<button onclick="encryptTrace()">Encrypt (Trace)</button>
+<button onclick="decryptTrace()">Decrypt (Trace)</button>
+
+<h3>Output</h3>
+<div id="output"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

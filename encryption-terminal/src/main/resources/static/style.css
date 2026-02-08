@@ -1,0 +1,95 @@
+body {
+    font-family: monospace;
+    background: #0f172a;
+    color: #e5e7eb;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    margin: 10px 0;
+    padding: 8px;
+    font-family: monospace;
+}
+
+button {
+    background: #1e293b;
+    color: #e5e7eb;
+    border: 1px solid #334155;
+    padding: 6px 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #334155;
+}
+
+.info-btn {
+    margin-bottom: 10px;
+}
+
+select, input {
+    margin-right: 6px;
+    padding: 4px;
+}
+
+#cipher-info {
+    margin: 15px 0;
+    padding: 15px;
+    background: #020617;
+    border: 1px solid #334155;
+}
+
+.cipher-card {
+    border-bottom: 1px solid #334155;
+    padding: 10px 0;
+}
+
+.cipher-card h4 {
+    margin: 0;
+    color: #38bdf8;
+}
+
+.cipher-card code {
+    display: block;
+    background: #020617;
+    padding: 6px;
+    margin-top: 5px;
+}
+
+#output {
+    margin-top: 15px;
+}
+
+/* ===== Trace Animation ===== */
+
+.trace-step {
+    margin: 10px 0;
+    padding: 8px;
+    border-left: 3px solid #38bdf8;
+    background: #020617;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.4s ease;
+}
+
+.trace-step.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.trace-step .title {
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+.trace-step .text {
+    white-space: pre-wrap;
+    margin-top: 4px;
+}
